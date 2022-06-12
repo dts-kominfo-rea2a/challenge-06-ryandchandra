@@ -21,19 +21,19 @@ let modifyFile3 = (val) => {
 // gunakan variabel file1, file2, dan file3
 const bacaData = (fnCallback) => {
   // baca file 1
-  fs.readFile("./data1.json", { encoding: 'utf-8' }, (err, data1) => {
+  fs.readFile(file1, { encoding: 'utf-8' }, (err, data1) => {
     if (err) {
       // error
       return fnCallback(err, null);
     } else {
       // baca file 2
-      fs.readFile("./data2.json", { encoding: 'utf-8' }, (err, data2) => {
+      fs.readFile(file2, { encoding: 'utf-8' }, (err, data2) => {
         if (err) {
           // error
           return fnCallback(err, null);
         } else {
           // baca file 3
-          fs.readFile("./data3.json", { encoding: 'utf-8' }, (err, data3) => {
+          fs.readFile(file3, { encoding: 'utf-8' }, (err, data3) => {
             if (err) {
               // error
               return fnCallback(err, null);
